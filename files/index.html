@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Unique ID: Driver's License Calculator: Maryland</title>
+	</head>
+	<link rel="StyleSheet" type="text/css" href="/internal.css">
+	<body>
+		<div class="headerframe">
+			<h1>Unique ID</h1>
+			<div class="headerbody">
+				<form action="/cgi-bin/uniqueid" method=post>
+					<p><a href="/cgi-bin/uniqueid">Other tools:</a>
+					<select class="briefselect" name="type">
+						<option value="dl_flr">Driver's License Analyzer: Florida</option>
+						<option value="dl_ilr">Driver's License Analyzer: Illinois</option>
+						<option value="dl_wir">Driver's License Analyzer: Wisconsin</option>
+						<option value="dl_fl">Driver's License Calculator: Florida</option>
+						<option value="dl_il">Driver's License Calculator: Illinois</option>
+						<option value="dl_md" selected>Driver's License Calculator: Maryland</option>
+						<option value="dl_mi">Driver's License Calculator: Michigan</option>
+						<option value="dl_mn">Driver's License Calculator: Minnesota (pre-2005)</option>
+						<option value="dl_nh">Driver's License Calculator: New Hampshire</option>
+						<option value="dl_ny92">Driver's License Calculator: New York (pre 1992)</option>
+						<option value="dl_wa">Driver's License Calculator: Washington</option>
+						<option value="dl_wi">Driver's License Calculator: Wisconsin</option>
+						<option value="c_firstmiddler">First Name Middle Initial Coding Analyzer</option>
+						<option value="mrzpr">Machine Readable Passport MRZ Analyzer</option>
+						<option value="mrzp">Machine Readable Passport MRZ Calculator</option>
+						<option value="c_soundex">Soundex Coding</option>
+					</select>
+					<input type="submit" value="Go">
+				</form>
+					</p>
+			</div>
+		</div>
+		<hr class="headerhr">
+		<div class="inputformframe">
+			<h2 class="inputformheader">Driver's License Calculator: Maryland</h2><div class="inputformbody">
+				Calculate your Maryland Driver's License number from your
+				information.
+				<p><strong>This algorithm is ALPHA grade. This algorithm is not yet well tested and may return wrong answers.</strong>
+				Please <a href="http://www.highprogrammer.com/alan/email.html">contact me</a> with details if you are receiving incorrect results.
+
+				<form action="/cgi-bin/uniqueid" name="realinput" method=post>
+					<table>
+						<tr><td><STRONG>First Name:&nbsp;</STRONG></td><td><input type="text" class="text" name="first" value="" size="40"><td></td></tr>
+						<tr><td><STRONG>Middle Name:&nbsp;</STRONG></td><td><input type="text" class="text" name="middle" value="" size="40"><td></td></tr>
+						<tr><td><STRONG>Last Name:&nbsp;</STRONG></td><td><input type="text" class="text" name="last" value="" size="40"><td></td></tr>
+						<tr><td><STRONG>Date of Birth:&nbsp;</STRONG></td><td><td></td></tr>
+						<tr><td><STRONG>&nbsp;&nbsp;&nbsp;Month:&nbsp;</STRONG></td><td><input type="text" class="text" name="m" value="" size="2"><td></td></tr>
+						<tr><td><STRONG>&nbsp;&nbsp;&nbsp;Day:&nbsp;</STRONG></td><td><input type="text" class="text" name="d" value="" size="2"><td></td></tr>
+					</table>
+					<input type="hidden" NAME="type" value="dl_md"><input type="hidden" name="step" value="1"><input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<hr class="footerhr">
+
+		<div class="footerframe">
+			<p>Results by Unique ID version 0.5.1/, Copyright 2013 <a href="http://www.highprogrammer.com/alan/">Alan De Smet</a>
+
+			<p>This software and its generated results come with <strong>absolutely no warranty</strong>.
+
+			<p>
+			<a href="http://www.highprogrammer.com/alan/numbers/">About Unique ID</a>
+			&nbsp; | &nbsp;
+			<a href="http://www.highprogrammer.com/alan/numbers/software.html">Download this software</a>
+			&nbsp; | &nbsp;
+			<a href="http://www.highprogrammer.com/alan/numbers/bugs.html">Report a Bug</a>
+			&nbsp; | &nbsp;
+			<a href="http://www.highprogrammer.com/alan/numbers/disclaimer.html">Disclaimer</a>
+			</p>
+
+
+		</div>
+
+	</body>
+</html>
